@@ -32,3 +32,19 @@ Test 1: "It should return the number of vowels if the body's sentence includes t
 Code: journalEntry.vowelCount("This is a sentence in the body");
 Expected Output: 9
 
+Test 2: "It should return the number of vowels and consonants if the body's sentence includes them."
+Code: 
+const bodyCounter = this.body;
+const vowels = "aeiouAEIOU";
+let vowelCount = 0;
+let consonantCount = 0;
+
+for (let i = 0; i < bodyCounter.length; i++) {
+if (vowels.includes(bodyCounter[i])){
+vowelCount++;
+}  else {
+consonantCount++;
+}}
+return "Vowels: " + vowelCount + " & " + "consonants: " + consonantCount;
+Expected Output: 'Vowels: 9 & consonants: 21'
+
