@@ -18,3 +18,10 @@ const bodyCount = this.body.split(" ");
 return bodyCount;
 journalEntry.wordCount("This is the body.");
 Expected Output: ['This', 'is', 'the', 'body']
+
+Test 3: "It should return the number of words from the body property."
+Code: 
+const bodyCount = this.body.split(" ");
+return bodyCount.length;
+journalEntry.wordCount();
+Expected Output: 4
