@@ -25,3 +25,10 @@ const bodyCount = this.body.split(" ");
 return bodyCount.length;
 journalEntry.wordCount();
 Expected Output: 4
+
+Describe: Entry.prototype.vowelCount(body)
+
+Test 1: "It should return the number of vowels if the body's sentence includes them."
+Code: journalEntry.vowelCount("This is a sentence in the body");
+Expected Output: 9
+
