@@ -3,9 +3,9 @@ function Entry(title, body){
   this.body = body;
 }
 
-let journalEntry = new Entry("title", "body");
+let journalEntry = new Entry("title", "This is the body");
 
 Entry.prototype.wordCount = function(body) {
-  this.body = body;
-  return this.body;
+  const bodyCount = this.body.split(" ");
+  return bodyCount;
 };
